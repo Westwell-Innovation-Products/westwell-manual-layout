@@ -1,0 +1,4 @@
+interface:
+  display_name: "西井操作手册版式"
+  short_description: "按最终确认的青蓝样式统一操作手册的版式、图文顺序、提示卡片与术语"
+  default_prompt: "使用 $westwell-manual-layout，按我提供的文件、修改范围、语言和输出格式整理操作手册。"

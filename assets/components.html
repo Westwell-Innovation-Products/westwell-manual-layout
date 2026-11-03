@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>西井手册组件样例</title><link rel="stylesheet" href="manual.css"></head>
+<body>
+<!-- This is a component demonstration, not a complete operating manual.
+     Replace example content and images with the task's supplied source. -->
+<aside class="sidebar" aria-label="章节导航">
+ <div class="sidebar-title">手册组件样例</div>
+ <nav><a class="level-2" href="#cover-example">首页封面</a><a class="level-2" href="#contents-example">目录</a><a class="level-1" href="#chapter-example"><span>第一章</span>功能与原理</a><a class="level-2" href="#function-example"><span>1.1</span>编辑船舶信息</a><a class="level-2" href="#concept-example"><span>1.2</span>VPB 布局原则</a></nav>
+</aside>
+<main class="manual-main">
+ <article class="manual-page cover-page" id="cover-example">
+  <header class="page-header"><span class="logo-frame"><img src="logo-horizontal.jpg" alt="西井科技 WESTWELL"></span><span>POF · FMS 用户操作指南</span></header>
+  <div class="page-body">
+   <h1 class="cover-title">FMS<br>用户操作指南</h1>
+   <p class="cover-subtitle">Fleet Management System</p>
+   <div class="cover-rule" aria-hidden="true"></div>
+   <div class="cover-bottom"><p>POF · 中文版</p><div class="cover-meta"><time datetime="2026-10-15">2026.10.15</time></div></div>
+  </div>
+  <footer class="page-footer"><span>WESTWELL · 组件样例</span><span>01 / 05</span></footer>
+ </article>
+ <article class="manual-page" id="contents-example">
+  <header class="page-header"><span class="logo-frame"><img src="logo-horizontal.jpg" alt="西井科技 WESTWELL"></span><span>目录</span></header>
+  <div class="page-body"><h1>目录</h1>
+   <a class="toc-row level-1" href="#chapter-example"><span>第一章</span><b>功能与原理</b><em>03</em></a>
+   <a class="toc-row level-2" href="#function-example"><span>1.1</span><b>编辑船舶信息</b><em>04</em></a>
+   <a class="toc-row level-2" href="#concept-example"><span>1.2</span><b>VPB 布局原则</b><em>05</em></a>
+  </div>
+  <footer class="page-footer"><span>WESTWELL · 组件样例</span><span>02 / 05</span></footer>
+ </article>
+ <article class="manual-page chapter-page" id="chapter-example">
+  <header class="page-header"><span class="logo-frame"><img src="logo-horizontal.jpg" alt="西井科技 WESTWELL"></span><span>第一章 功能与原理</span></header>
+  <div class="page-body"><h1 class="chapter-title">第一章 · 功能与原理</h1>
+   <p class="chapter-intro">本章用船舶信息编辑和 VPB 布局原则演示两种页面：功能操作页说明入口和执行方法；原理说明页解释配置原则。</p>
+   <nav class="chapter-nav" aria-label="本章小节"><a href="#function-example"><span>1.1</span>编辑船舶信息</a><a href="#concept-example"><span>1.2</span>VPB 布局原则</a></nav>
+  </div>
+  <footer class="page-footer"><span>WESTWELL · 组件样例</span><span>03 / 05</span></footer>
+ </article>
+ <article class="manual-page" id="function-example">
+  <header class="page-header"><span class="logo-frame"><img src="logo-horizontal.jpg" alt="西井科技 WESTWELL"></span><span>第一章 功能与原理</span></header>
+  <div class="page-body">
+   <h2><span class="heading-number">1.1</span>编辑船舶信息</h2>
+   <div class="route"><span class="route-label">操作入口</span>Map <i class="route-separator">›</i> Vessel Plan <i class="route-separator">›</i> Vessel Plan</div>
+   <p class="function-description">船舶信息或作业绑定发生变化时，使用编辑功能更新船舶配置。</p>
+   <h3 class="section-label">操作步骤</h3>
+   <ol class="steps"><li data-step="01"><div>通过顶部菜单或地图右侧船舶计划快捷入口，打开船舶列表。</div></li></ol>
+   <section class="instruction-group">
+    <ol class="steps" start="2"><li data-step="02"><div>点击 <b class="ui">Edit</b>，修改船舶信息后，点击 <b class="ui">Confirm</b> 保存。</div></li></ol>
+    <figure><div class="image-frame" style="--image-height:245px"><img src="sample-edit.png" alt="船舶列表中的 Edit 操作"></div><figcaption>船舶列表中的 Edit 操作</figcaption></figure>
+   </section>
+   <aside class="notice" aria-label="注意事项"><strong class="notice-title"><svg class="notice-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><circle cx="12" cy="17" r=".8" style="fill:currentColor;stroke:none"/></svg>注意事项</strong><p>Vessel ID 无法直接修改。需要变更时，须先完成该船全部任务，再办理离泊并重新创建船舶。</p></aside>
+   <aside class="notice" aria-label="Tips"><strong class="notice-title"><svg class="tips-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6m-5 3h4M8.5 15.5a6 6 0 1 1 7 0c-.9.7-1.5 1.4-1.5 2.5h-4c0-1.1-.6-1.8-1.5-2.5Z"/></svg>Tips</strong><p>更换或增加 QC 后，应同步更新船舶的 QC 绑定信息。</p></aside>
+  </div>
+  <footer class="page-footer"><span>WESTWELL · 组件样例</span><span>04 / 05</span></footer>
+ </article>
+ <article class="manual-page" id="concept-example">
+  <header class="page-header"><span class="logo-frame"><img src="logo-horizontal.jpg" alt="西井科技 WESTWELL"></span><span>第一章 功能与原理</span></header>
+  <div class="page-body">
+   <h2><span class="heading-number">1.2</span>VPB 布局原则</h2>
+   <p>VPB 是 AT 进入或离开岸桥作业区时经过的区域或点位，其位置和方向会影响通行路径、排队与等待。</p>
+   <h3 class="section-label">配置原则</h3>
+   <ol class="scenario-list"><li><strong>减少路径冲突：</strong>减少进出车辆之间及其对其他交通的影响，现场条件允许时通过多个 VPB 分散车流。</li><li><strong>缩短通行距离：</strong>尽量缩短进出岸桥作业区的行驶距离，避免不必要的绕行。</li><li><strong>预留排队空间：</strong>根据预计排队车辆数设置 VPB 与锁站或岸桥之间的距离，兼顾排队空间和场地占用。</li></ol>
+   <h3 class="section-label">术语示例</h3>
+   <table><thead><tr><th>术语</th><th>含义</th></tr></thead><tbody><tr><td>in-vpb / out-vpb</td><td>上岸桥 VPB / 下岸桥 VPB</td></tr><tr><td>SSQ</td><td>灵活锁站</td></tr><tr><td>Stop / Estop</td><td>缓停 / 紧停</td></tr></tbody></table>
+   <aside class="notice"><strong class="notice-title"><svg class="notice-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><circle cx="12" cy="17" r=".8" style="fill:currentColor;stroke:none"/></svg>注意事项</strong><p>本页为原则说明，不套用操作步骤编号。具体配置应结合实际作业条件。</p><p><span class="inline-tip-label"><svg class="tips-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6m-5 3h4M8.5 15.5a6 6 0 1 1 7 0c-.9.7-1.5 1.4-1.5 2.5h-4c0-1.1-.6-1.8-1.5-2.5Z"/></svg>Tips</span>修改现有手册时，保留相关设置说明和原有交叉引用。</p></aside>
+  </div>
+  <footer class="page-footer"><span>WESTWELL · 组件样例</span><span>05 / 05</span></footer>
+ </article>
+</main>
+<script>
+function fitManual(){const main=document.querySelector('.manual-main'),s=getComputedStyle(main);const available=main.clientWidth-parseFloat(s.paddingLeft)-parseFloat(s.paddingRight);document.documentElement.style.setProperty('--page-zoom',Math.min(1,available/(210*96/25.4)));}
+addEventListener('resize',fitManual);fitManual();
+</script>
+</body></html>
